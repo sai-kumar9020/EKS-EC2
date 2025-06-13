@@ -1,24 +1,9 @@
-variable "vpc_cidr" {
-  description = "CIDR block for VPC"
+variable "vpc_cidr_block" {
+  description = "Cidr range for vpc"
   type        = string
 }
 
-variable "availability_zones" {
-  description = "Availability zones"
-  type        = list(string)
-}
-
-variable "cluster_name" {
-  description = "Name of the EKS cluster"
-  type        = string
-}
-
-variable "environment" {
-  description = "Environment name"
-  type        = string
-}
-
-variable "project_name" {
-  description = "Name of the project"
+variable "name" {
+  description = "Name to be used on VPC created"
   type        = string
 }
